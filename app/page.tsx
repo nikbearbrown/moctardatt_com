@@ -220,7 +220,7 @@ export default async function Home() {
       <section className="w-full py-16 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="max-w-3xl">
-            <div className="w-16 h-1.5 bg-highlight mb-8" />
+            <div className="w-16 h-1.5 bg-primary mb-8" />
 
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-6 leading-tight">
               Most AI products built for West Africa are built for a West Africa that doesn&rsquo;t exist.
@@ -248,7 +248,7 @@ export default async function Home() {
       <section className="w-full py-16 md:py-24 border-y bg-muted/40">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="mb-10">
-            <div className="w-10 h-1 bg-highlight mb-5" />
+            <div className="w-10 h-1 bg-primary mb-5" />
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-3">
               Fifteen Markets. One Methodology.
             </h2>
@@ -269,7 +269,7 @@ export default async function Home() {
       <section className="w-full py-16 md:py-24">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="mb-10">
-            <div className="w-10 h-1 bg-highlight mb-5" />
+            <div className="w-10 h-1 bg-primary mb-5" />
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-3">
               The Six Dimensions
             </h2>
@@ -297,7 +297,7 @@ export default async function Home() {
       <section className="w-full py-16 md:py-24 border-y bg-muted/40">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="mb-10">
-            <div className="w-10 h-1 bg-highlight mb-5" />
+            <div className="w-10 h-1 bg-primary mb-5" />
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-3">
               Work with Moctar
             </h2>
@@ -329,7 +329,7 @@ export default async function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex items-end justify-between gap-4 mb-10">
             <div>
-              <div className="w-10 h-1 bg-highlight mb-5" />
+              <div className="w-10 h-1 bg-primary mb-5" />
               <h2 className="text-3xl font-bold tracking-tighter">Recent Writing</h2>
             </div>
             <Link href="/blog" className="text-sm font-semibold text-primary hover:underline shrink-0">
