@@ -22,6 +22,28 @@ interface Tool {
   tags: string[]
 }
 
+// Country name injected as a tag so the country filter buttons work.
+// Key = artifact slug (filename without .html), value = country name matching filters.json
+const SLUG_COUNTRY: Record<string, string> = {
+  'naija-nigeria':        'Nigeria',
+  'akwaaba-ghana':        'Ghana',
+  'akwaba-cote-divoire':  "Côte d'Ivoire",
+  'teranga-senegal':      'Senegal',
+  'teranga-mali':         'Mali',
+  'naam-burkina-faso':    'Burkina Faso',
+  'aziza-benin':          'Benin',
+  'lafiya-niger':         'Niger',
+  'djoliba-guinea':       'Guinea',
+  'attaya-mauritania':    'Mauritania',
+  'kekeli-togo':          'Togo',
+  'kushe-sierra-leone':   'Sierra Leone',
+  'zoe-liberia':          'Liberia',
+  'palava-liberia':       'Liberia',
+  'sodade-capeverde':     'Cape Verde',
+  'jamma-gambia':         'Gambia',
+  'geba-guinea-bissau':   'Guinea-Bissau',
+}
+
 export default async function ToolsPage() {
   const artifactDocs = scanHtmlDir(join(process.cwd(), 'public', 'artifacts'))
 
@@ -38,7 +60,12 @@ export default async function ToolsPage() {
     const dbRecord = dbBySlug.get(doc.slug)
     const fsTags = doc.tags || []
     const dbTags = dbRecord?.tags || []
-    const mergedTags = Array.from(new Set([...fsTags, ...dbTags]))
+    const countryTag = SLUG_COUNTRY[doc.slug]
+    const mergedTags = Array.from(new Set([
+      ...(countryTag ? [countryTag] : []),
+      ...fsTags,
+      ...dbTags,
+    ]))
     return {
       id: dbRecord?.id ?? `fs-${doc.slug}`,
       name: doc.title,
