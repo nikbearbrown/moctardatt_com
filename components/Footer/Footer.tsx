@@ -90,8 +90,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-sm text-muted-foreground">
-          &copy; {currentYear} MoctarDatt.com. All rights reserved.
+        <div className="mt-8 text-center text-sm text-muted-foreground space-y-1">
+          <p>&copy; {currentYear} MoctarDatt.com. All rights reserved.</p>
+          <p>
+            Built by{" "}
+            <a href="https://bearbrown.co" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">bearbrown.co</a>
+            {" "}in collaboration with{" "}
+            <a href="https://irreducibly.xyz" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Irreducibly Human</a>
+          </p>
         </div>
       </div>
     </footer>
