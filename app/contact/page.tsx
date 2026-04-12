@@ -23,17 +23,6 @@ export default function ContactPage() {
               moctardatt@hotmail.com
             </a>
           </div>
-          <div>
-            <p className="text-sm font-medium mb-1">GitHub</p>
-            <a
-              href="https://github.com/moctardatt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline font-medium"
-            >
-              github.com/moctardatt
-            </a>
-          </div>
         </div>
       </div>
     </div>

@@ -30,10 +30,7 @@ export default function AboutPage() {
             <a href="mailto:moctardatt@hotmail.com" className="text-primary hover:underline">
               moctardatt@hotmail.com
             </a>
-            {' '}or find me on{' '}
-            <a href="https://github.com/moctardatt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              GitHub
-            </a>.
+.
           </p>
         </div>
       </div>

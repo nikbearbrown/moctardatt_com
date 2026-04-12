@@ -36,7 +36,6 @@ export default function Header() {
   ]
 
   const socialLinks = [
-    { name: "GitHub", href: "https://github.com/moctardatt" },
     { name: "Contact", href: "/contact" },
   ]
 
