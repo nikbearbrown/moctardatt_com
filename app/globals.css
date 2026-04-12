@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ── snl palette — Pan-African tricolor ── */
+    /* p1 #000000  black ink — primary text      AAA 21.0:1 */
+    /* p2 #006030  teranga green — primary accent AAA  7.7:1 */
+    /* p3 #A81520  republic red — danger/emphasis AAA  7.5:1 */
+    /* p4 #FDEF42  star gold — highlight bg only  FAIL 1.2:1 */
+    /* p5 #333333  charcoal — secondary text      AAA 12.6:1 */
+    /* p6 #727272  graphite — muted text          AA   4.6:1 */
+    /* p7 #EBEBEB  fog — borders, subtle bg       FAIL 1.1:1 */
+    /* p8 #FFFFFF  white — page background             bg    */
+    --p1: #000000;
+    --p2: #006030;
+    --p3: #A81520;
+    --p4: #FDEF42;
+    --p5: #333333;
+    --p6: #727272;
+    --p7: #EBEBEB;
+    --p8: #FFFFFF;
+
+    /* ── shadcn / Tailwind token layer ── */
+    --background: 0 0% 100%;           /* p8 white */
+    --foreground: 0 0% 0%;             /* p1 black */
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 150 100% 19%;           /* p2 teranga green #006030 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 92%;             /* p7 fog #EBEBEB */
+    --secondary-foreground: 0 0% 20%; /* p5 charcoal #333333 */
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 45%;      /* p6 graphite #727272 */
+    --accent: 150 100% 19%;            /* p2 teranga green */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 356 78% 37%;        /* p3 republic red #A81520 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 92%;                /* p7 fog */
+    --input: 0 0% 92%;
+    --ring: 150 100% 19%;              /* p2 teranga green */
+    --highlight: 56 98% 63%;           /* p4 star gold #FDEF42 — bg-only */
+    --highlight-foreground: 0 0% 0%;
+    --radius: 0.5rem;
+
+    /* chart palette */
+    --chart-1: 356 78% 37%;           /* p3 republic red */
+    --chart-2: 150 100% 19%;          /* p2 teranga green */
+    --chart-3: 56 98% 63%;            /* p4 star gold */
+    --chart-4: 0 0% 20%;              /* p5 charcoal */
+    --chart-5: 0 0% 45%;              /* p6 graphite */
+
+    /* sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 150 100% 19%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 92%;
+    --sidebar-accent-foreground: 0 0% 20%;
+    --sidebar-border: 0 0% 92%;
+    --sidebar-ring: 150 100% 19%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 150 70% 35%;            /* brightened teranga green */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 150 70% 35%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 356 65% 52%;        /* brightened republic red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 150 70% 35%;
+    --highlight: 56 98% 63%;           /* star gold — unchanged */
+    --highlight-foreground: 0 0% 0%;
+
+    --chart-1: 356 75% 58%;
+    --chart-2: 150 70% 42%;
+    --chart-3: 56 98% 63%;
+    --chart-4: 0 0% 40%;
+    --chart-5: 0 0% 58%;
+
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 150 70% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 150 70% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  ::selection {
+    @apply bg-highlight text-highlight-foreground;
+  }
+  ::-moz-selection {
+    @apply bg-highlight text-highlight-foreground;
+  }
+}
