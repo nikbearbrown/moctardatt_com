@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKWABA — Côte d'Ivoire AI Adaptation Consultant</title>
+  <meta name="description" content="AKWABA is a systematic framework for deploying AI products in Côte d'Ivoire. It covers Nouchi as the Abidjan vernacular that standard French NLP systematically misreads, three distinct interface architectures (Abidjan formal / Abidjan informal / interior-cocoa belt-north), Mooré as the highest-performance indigenous NLP in the framework family (4.24% WER) for Burkinabè migrant workers in the cocoa belt, a four-player mobile money market, Orange Bank Africa's banking-mobile money integration, CCC cocoa sector regulation, post-conflict north-south balance as a mandatory launch gate, and Dioula trading networks as cross-ethnic distribution infrastructure.">
+  <meta name="keywords" content="Côte d'Ivoire AI, Nouchi NLP, Dioula language, Baoulé language, Mooré cocoa belt, Burkinabè migrant workers, Orange Money, Wave, Orange Bank Africa, PI-SPI advanced tier, Conseil Café-Cacao, APDP-CI, post-conflict Ivoirité, cocoa smallholder, cooperative president, Dioula trading network, AKWABA framework, WAEMU regional platform">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --p1: #000000;
+      --p2: #006030;
+      --p3: #A81520;
+      --p4: #FDEF42;
+      --p5: #333333;
+      --p6: #727272;
+      --p7: #EBEBEB;
+      --p8: #FFFFFF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      background: var(--p8);
+      color: var(--p1);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 3px solid var(--p1);
+      position: sticky;
+      top: 0;
+      background: var(--p8);
+      z-index: 100;
+    }
+    .masthead-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+    }
+    .masthead-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--p2);
+      text-decoration: none;
+    }
+    .masthead-tag {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--p6);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      border-bottom: 1px solid var(--p7);
+      padding: 56px 24px 48px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--p2);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--p2);
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--p1);
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+    .hero h1 span { color: var(--p2); }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--p5);
+      max-width: 650px;
+      line-height: 1.7;
+      font-style: italic;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero-meta {
+      display: flex;
+      gap: 10px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .hero-badge {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border: 1px solid var(--p7);
+      color: var(--p6);
+    }
+    .hero-badge.accent { border-color: var(--p2); color: var(--p2); }
+    .hero-badge.danger { border-color: var(--p3); color: var(--p3); }
+
+    /* ── LAYOUT ── */
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── SECTION HEADERS ── */
+    .section-header {
+      border-top: 1px solid var(--p7);
+      padding-top: 48px;
+      margin-top: 48px;
+    }
+    .section-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--p6);
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--p1);
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    h2 .accent { color: var(--p2); }
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--p1);
+      margin: 32px 0 10px;
+    }
+    h3.cmd {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--p2);
+      background: rgba(0,96,48,0.06);
+      padding: 8px 14px;
+      border-left: 3px solid var(--p2);
+      margin: 32px 0 12px;
+    }
+    p {
+      color: var(--p5);
+      margin-bottom: 14px;
+      font-size: 0.975rem;
+    }
+    strong { color: var(--p1); font-weight: 600; }
+
+    /* ── STAT ROW ── */
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--p7);
+      border: 1px solid var(--p7);
+      margin: 24px 0 32px;
+    }
+    .stat-cell {
+      background: var(--p8);
+      padding: 18px 16px;
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--p3);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-num.positive { color: var(--p2); }
+    .stat-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--p6);
+      line-height: 1.5;
+    }
+
+    /* ── THREE-TIER INTERFACE GRID ── */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--p7);
+      border: 1px solid var(--p7);
+      margin: 24px 0 32px;
+    }
+    .tier-panel {
+      background: var(--p8);
+      padding: 20px 18px;
+    }
+    .tier-panel.informal { background: rgba(168,21,32,0.03); }
+    .tier-panel.interior { background: rgba(0,96,48,0.03); }
+    .tier-num {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--p6);
+      margin-bottom: 6px;
+    }
+    .tier-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--p1);
+      margin-bottom: 4px;
+    }
+    .tier-geography {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      color: var(--p6);
+      margin-bottom: 10px;
+    }
+    .tier-panel.informal .tier-geography { color: var(--p3); }
+    .tier-panel.interior .tier-geography { color: var(--p2); }
+    .tier-desc {
+      font-size: 0.83rem;
+      color: var(--p5);
+      line-height: 1.55;
+      margin: 0 0 8px 0;
+    }
+    .tier-lang {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.72em;
+      font-weight: 600;
+      color: var(--p5);
+      display: block;
+    }
+    .tier-panel.informal .tier-lang { color: var(--p3); }
+    .tier-panel.interior .tier-lang { color: var(--p2); }
+
+    /* ── TRAP BLOCK ── */
+    .trap-block {
+      border: 2px solid var(--p3);
+      padding: 24px;
+      margin: 24px 0 32px;
+      position: relative;
+    }
+    .trap-block-label {
+      position: absolute;
+      top: -11px;
+      left: 16px;
+      background: var(--p8);
+      padding: 0 8px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--p3);
+      font-weight: 600;
+    }
+    .trap-block p {
+      margin-bottom: 10px;
+      color: var(--p1);
+      font-size: 0.9rem;
+    }
+    .trap-block p:last-child { margin-bottom: 0; }
+
+    /* ── CMD TABLE ── */
+    .cmd-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0 32px;
+      font-size: 0.9rem;
+    }
+    .cmd-table th {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--p6);
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 2px solid var(--p1);
+    }
+    .cmd-table td {
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--p7);
+      vertical-align: top;
+      color: var(--p5);
+      line-height: 1.5;
+    }
+    .cmd-table tr:last-child td { border-bottom: none; }
+    .cmd-table code {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.85em;
+      color: var(--p2);
+      font-weight: 500;
+    }
+    .cmd-table tr:hover td { background: rgba(0,96,48,0.03); }
+
+    /* ── CALLOUT ── */
+    .callout {
+      border-left: 3px solid var(--p3);
+      padding: 16px 20px;
+      margin: 24px 0;
+      background: rgba(168,21,32,0.04);
+    }
+    .callout.green {
+      border-left-color: var(--p2);
+      background: rgba(0,96,48,0.04);
+    }
+    .callout.gold {
+      border-left-color: var(--p5);
+      background: var(--p4);
+    }
+    .callout-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--p3);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .callout.green .callout-label { color: var(--p2); }
+    .callout.gold .callout-label { color: var(--p5); }
+    .callout p { margin-bottom: 0; color: var(--p1); font-size: 0.9rem; }
+
+    /* ── SEVEN-FRAMEWORK CROSSWALK ── */
+    .crosswalk-7 {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72rem;
+      margin: 20px 0 32px;
+    }
+    .crosswalk-7 th {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 7px 6px;
+      border-bottom: 2px solid var(--p1);
+      text-align: left;
+      color: var(--p6);
+      white-space: nowrap;
+    }
+    .crosswalk-7 th.akwaba-col { color: var(--p2); }
+    .crosswalk-7 td {
+      padding: 7px 6px;
+      border-bottom: 1px solid var(--p7);
+      vertical-align: top;
+      color: var(--p5);
+      line-height: 1.45;
+    }
+    .crosswalk-7 td:first-child {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.76em;
+      font-weight: 600;
+      color: var(--p5);
+      width: 12%;
+    }
+    .crosswalk-7 td.akwaba-col { color: var(--p1); background: rgba(0,96,48,0.03); }
+    .crosswalk-7 tr:last-child td { border-bottom: none; }
+    .crosswalk-7 .flag {
+      display: block;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.68em;
+      font-weight: 600;
+      color: var(--p3);
+      margin-top: 2px;
+    }
+    .crosswalk-7 .positive {
+      display: block;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.68em;
+      font-weight: 600;
+      color: var(--p2);
+      margin-top: 2px;
+    }
+
+    /* ── PATTERN LISTS ── */
+    .pattern-list {
+      list-style: none;
+      margin: 16px 0 24px;
+    }
+    .pattern-list li {
+      padding: 12px 16px 12px 44px;
+      border-bottom: 1px solid var(--p7);
+      position: relative;
+      font-size: 0.9rem;
+      color: var(--p5);
+      line-height: 1.6;
+    }
+    .pattern-list li:last-child { border-bottom: none; }
+    .pattern-list li::before {
+      position: absolute;
+      left: 14px;
+      top: 13px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.75em;
+      font-weight: 500;
+    }
+    .forbidden li::before { content: '✕'; color: var(--p3); }
+    .required li::before { content: '✓'; color: var(--p2); }
+
+    /* ── INTEGRITY CHECKLIST ── */
+    .checklist { list-style: none; margin: 16px 0; }
+    .checklist li {
+      padding: 9px 14px 9px 36px;
+      border-bottom: 1px solid var(--p7);
+      position: relative;
+      font-size: 0.88rem;
+      color: var(--p5);
+      line-height: 1.55;
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '□';
+      position: absolute;
+      left: 12px;
+      top: 9px;
+      color: var(--p6);
+    }
+
+    /* ── HOW-TO BLOCK ── */
+    .how-to-block {
+      border-left: 4px solid var(--p2);
+      padding: 20px 24px;
+      margin: 32px 0 0 0;
+      background: rgba(0,96,48,0.06);
+      border-radius: 0 4px 4px 0;
+    }
+    .how-to-block .block-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--p5);
+      margin: 0 0 12px 0;
+    }
+    .how-to-block ol {
+      color: var(--p1);
+      margin: 0;
+      padding-left: 1.4em;
+      font-size: 0.95em;
+      line-height: 1.8;
+    }
+
+    /* ── PROMPT BLOCK ── */
+    .prompt-block { margin: 16px 0 32px 0; }
+    .prompt-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .prompt-block-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--p6);
+      margin: 0;
+    }
+    .copy-btn {
+      background: var(--p5);
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 3px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .copy-btn:hover { background: var(--p1); }
+    .prompt-pre {
+      background: var(--p7);
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      padding: 20px;
+      overflow-x: auto;
+      margin: 0;
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    .prompt-pre code {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 11.5px;
+      line-height: 1.7;
+      color: var(--p1);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* ── PHASES ── */
+    .phases { display: grid; gap: 0; margin: 20px 0 32px; }
+    .phase-card {
+      border: 1px solid var(--p7);
+      border-bottom: none;
+      padding: 20px 24px;
+    }
+    .phase-card:last-child { border-bottom: 1px solid var(--p7); }
+    .phase-num {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--p6);
+      margin-bottom: 6px;
+    }
+    .phase-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--p1);
+      margin-bottom: 4px;
+    }
+    .phase-timeline {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      color: var(--p2);
+      margin-bottom: 12px;
+    }
+    .phase-gate {
+      font-size: 0.82rem;
+      color: var(--p3);
+      font-style: italic;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--p7);
+    }
+
+    /* ── INVOCATION BLOCK ── */
+    .invocation {
+      background: var(--p7);
+      border-radius: 4px;
+      padding: 20px;
+      margin: 16px 0 24px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 12px;
+      color: var(--p5);
+      line-height: 2;
+    }
+    .invocation .inv-comment { color: var(--p6); font-style: italic; }
+    .invocation strong { color: var(--p2); font-weight: 500; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--p7);
+      padding: 24px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--p6);
+      margin-top: 80px;
+    }
+    footer a { color: var(--p6); text-decoration: underline; }
+    footer a:hover { color: var(--p2); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero { padding: 36px 16px 32px; }
+      .content { padding: 0 16px 60px; }
+      .masthead-inner { padding: 0 16px; }
+      .stat-row { grid-template-columns: repeat(2, 1fr); }
+      .tier-grid { grid-template-columns: 1fr; }
+      .cmd-table { font-size: 0.8rem; }
+      .crosswalk-7 { font-size: 0.65rem; }
+      .cmd-table th, .cmd-table td,
+      .crosswalk-7 th, .crosswalk-7 td { padding: 5px 4px; }
+      .prompt-block-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="https://www.bearbrown.co" class="masthead-logo">bearbrown.co</a>
+      <span class="masthead-tag">Reference Doc · AKWABA Framework</span>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-eyebrow">Prompt Reference</div>
+    <h1><span>AKWABA</span> — Côte d'Ivoire AI Adaptation Consultant</h1>
+    <p class="hero-sub"><em>Akwaba</em> (Baoulé/Akan) — the Ivorian word for welcome, used as the national hospitality greeting across ethnic lines. The Ivorian cousin of <em>teranga</em>. An AI product that does not speak to Côte d'Ivoire's conditions is not welcomed here. It is tolerated until something better arrives.</p>
+    <div class="hero-meta">
+      <span class="hero-badge accent">8 Commands</span>
+      <span class="hero-badge accent">6 Dimensions</span>
+      <span class="hero-badge danger">Nouchi NLP Trap</span>
+      <span class="hero-badge danger">Post-Conflict Balance Gate</span>
+      <span class="hero-badge accent">Mooré 4.24% WER</span>
+      <span class="hero-badge">Four-Player Market</span>
+      <span class="hero-badge">WAEMU Regional Hub</span>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- BINDING CONSTRAINTS AND ADVANTAGES -->
+    <div class="stat-row">
+      <div class="stat-cell">
+        <div class="stat-num">~40%</div>
+        <div class="stat-label">Global cocoa supply — the world's largest producer; Conseil Café-Cacao governs every supply chain product</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">~30%</div>
+        <div class="stat-label">Immigrant population — Burkinabè and Malian workers majority in many cocoa cooperatives; systematically excluded from "Ivorian" products</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num">15</div>
+        <div class="stat-label">PI-SPI authorized institutions — second only to Senegal; most advanced WAEMU financial interoperability outside Dakar</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num positive">4.24%</div>
+        <div class="stat-label">WER for Mooré ASR — highest-performance indigenous NLP in the framework family; Burkinabè workers in cocoa belt</div>
+      </div>
+    </div>
+
+    <!-- THREE CÔTE D'IVOIRES DECLARATION -->
+    <div class="section-label">Mandatory First Declaration — Before Any Other Analysis</div>
+    <div class="tier-grid">
+      <div class="tier-panel">
+        <div class="tier-num">Tier 1</div>
+        <div class="tier-name">Abidjan Formal</div>
+        <div class="tier-geography">Plateau · Cocody · Zone 4 · Marcory</div>
+        <p class="tier-desc">Text-first French viable. Orange Bank Africa integration expected. Most financially sophisticated environment in WAEMU. Orange Bank Africa API, full PI-SPI.</p>
+        <span class="tier-lang">→ Standard French NLP + Orange Bank Africa + PI-SPI</span>
+      </div>
+      <div class="tier-panel informal">
+        <div class="tier-num">Tier 2</div>
+        <div class="tier-name">Abidjan Informal</div>
+        <div class="tier-geography">Yopougon · Adjamé · Abobo · Koumassi</div>
+        <p class="tier-desc">Nouchi voice mandatory — standard French NLP fails here. Market-ambient design. Transaction-speed-optimized. 6+ million people in these communes.</p>
+        <span class="tier-lang">→ Nouchi voice (no NLP exists; build required)</span>
+      </div>
+      <div class="tier-panel interior">
+        <div class="tier-num">Tier 3</div>
+        <div class="tier-name">Interior / Cocoa Belt / North</div>
+        <div class="tier-geography">Baoulé heartland · cocoa belt · Korhogo north</div>
+        <p class="tier-desc">Voice-first mandatory. Baoulé/Dioula/Sénoufo/Mooré audio layers by region. Offline-first. Migrant worker population requires Mooré. CCC compliance.</p>
+        <span class="tier-lang">→ Mooré (4.24% WER) + Baoulé/Dioula + offline-first</span>
+      </div>
+    </div>
+    <p style="font-size:0.88rem; color:var(--p3); margin-top:-16px; margin-bottom:28px;"><strong>Products that build only one tier and deploy nationally are not serving Côte d'Ivoire. They are serving a slice of it under a national flag.</strong> Declare which tier(s) the product is designed for before any other design decision.</p>
+
+    <!-- THE NOUCHI TRAP -->
+    <div class="trap-block">
+      <span class="trap-block-label">The Nouchi Trap — Standard French NLP Fails in Abidjan's Majority Communes</span>
+      <p>The actual language of Abidjan's informal economy, youth culture, social media, and market life is Nouchi — an Abidjan-specific street creole that mixes French, Dioula, Baoulé, English, and other languages into a fluid urban register with its own grammar, its own lexicon, and essentially no NLP resources.</p>
+      <p>Standard French NLP models fail on Nouchi for the same structural reasons that Standard English fails on Liberian English: the official language and the vernacular are not the same thing, and the gap is invisible until the product is tested with actual users in Yopougon, Adjamé, Abobo, and Koumassi — where the majority of Abidjan's 6+ million residents live — rather than educated professionals in Plateau or Cocody who code-switch to standard French when talking to outsiders.</p>
+      <p>There are no Nouchi NLP resources. No FLORES-200 entry. No Masakhane benchmark. No ASR model. Building minimum viable Nouchi capability requires field data collection as a prerequisite, not a Phase 3 aspiration.</p>
+    </div>
+
+    <!-- HOW TO USE -->
+    <div class="how-to-block">
+      <p class="block-label">How to Use This Tool</p>
+      <ol>
+        <li>Copy the system prompt below using the Copy button.</li>
+        <li>Go to <strong>claude.ai</strong> and create a new Project.</li>
+        <li>Paste the prompt into the <strong>Project Instructions</strong> field.</li>
+        <li>Start a conversation — the tool is ready to use.</li>
+        <li>Declare the Three Côte d'Ivoires scope before any other analysis. Complete the post-conflict north-south balance check before any launch. Initiate CIMA licensing in Phase 1 if the product includes any insurance feature — the process takes 6–12 months.</li>
+      </ol>
+    </div>
+
+    <!-- SYSTEM PROMPT BLOCK -->
+    <div class="prompt-block">
+      <div class="prompt-block-header">
+        <p class="prompt-block-label">System Prompt — copy into your Claude Project</p>
+        <button class="copy-btn" onclick="
+          navigator.clipboard.writeText(this.closest('.prompt-block').querySelector('code').innerText);
+          this.textContent='Copied!';
+          setTimeout(()=>this.textContent='Copy prompt',1500);
+        ">Copy prompt</button>
+      </div>
+      <pre class="prompt-pre"><code>AKWABA is a systematic product adaptation framework for deploying AI in Côte d'Ivoire. It operates at the intersection of WAEMU's most developed fintech ecosystem and some of the most linguistically and socially complex deployment conditions in the framework family. It addresses Nouchi — the Abidjan street creole that standard French NLP systematically misreads; a four-player mobile money market with active fee competition; Orange Bank Africa's banking-mobile money integration unique in WAEMU; Mooré as the highest-performance indigenous NLP in the family (4.24% WER) for Burkinabè migrant workers in the cocoa belt; a mandatory post-conflict north-south balance check before any product launch; and Conseil Café-Cacao regulation for anything touching the world's largest cocoa supply chain.
+
+Akwaba (Baoulé/Akan) — the Ivorian word for welcome. An AI product that does not speak to Côte d'Ivoire's conditions is not welcomed here. It is tolerated until something better arrives.
+
+COMMANDS:
+akwaba [product] — Full adaptation audit across all six dimensions
+lingua [product] — Language and NLP strategy (Nouchi, Dioula/Bambara transfer, Mooré cocoa belt, N'Ko pipeline, Baoulé)
+rails [product] — Mobile money integration (four-player market, Orange Bank Africa, PI-SPI advanced, CCC cocoa payment architecture)
+voice [product] — Voice-first UX (three-tier interface architecture, Nouchi audio, Mooré deployment, post-conflict visual balance)
+comply [product] — Regulatory roadmap (APDP-CI, BCEAO/PI-SPI, ARTCI, CCC, CIMA insurance)
+culture [product] — Social and cultural adaptation (post-conflict north-south fracture, Dioula trading networks, Burkinabè migrant workers, Coupé-Décalé register)
+roadmap [product] — Phased implementation (cocoa calendar-aware, PI-SPI June 2026 deadline)
+data [product] — Data source intelligence brief
+help — Command guide
+
+LABELING PROTOCOL:
+[Observed] — directly verifiable from public sources
+[Inferred] — logical deduction from observable signals
+[Unverifiable] — requires firsthand testing or in-country fieldwork; flag for investigation
+[Not Applicable] — dimension does not apply; explain why
+
+THE THREE CÔTE D'IVOIRES DECLARATION — mandatory first step:
+Before any other analysis, declare which Côte d'Ivoire the product is designed for:
+(a) Abidjan formal sector (Plateau/Cocody/Zone 4) — most financially sophisticated WAEMU environment; French text viable; Orange Bank Africa integration possible
+(b) Abidjan informal sector (Yopougon/Adjamé/Abobo/Koumassi) — Nouchi voice mandatory; standard French NLP fails; majority of Abidjan lives here
+(c) Interior/cocoa belt/north — voice-first mandatory; indigenous languages required; offline-first; Mooré for Burkinabè workers; CCC compliance
+Products that claim to serve all three with a single interface have silently chosen to serve (a) adequately and (b) and (c) inadequately.
+
+THE POST-CONFLICT NORTH-SOUTH BALANCE CHECK — mandatory launch gate:
+No product should launch in Côte d'Ivoire without an explicit review of:
+- Visual identity: are spokespeople pan-ethnic, not southern-default?
+- Voice persona: does the accent code to one region?
+- Distribution strategy: is the launch geography balanced or southern-first by default?
+- Gatekeeper engagement: are both Islamic north and Christian south represented?
+Failing any item is a launch risk. Ivorian users are highly attuned to ethnic coding signals. A product that unintentionally codes as "southern" will face adoption resistance in the north that no amount of subsequent marketing can reverse.
+
+FORBIDDEN PATTERNS (never write these):
+- "French-language deployment" as if standard French NLP reaches Abidjan's majority user population (Nouchi is the actual vernacular of Yopougon/Adjamé/Abobo/Koumassi; the majority of Abidjan lives in these communes)
+- "Stable WAEMU market" as shorthand for simple financial integration (four-player market with active fee competition; Orange Bank Africa adds banking-grade complexity; simple single-player integration is not sufficient)
+- "Cocoa farmer" without specifying nationality (25-30% of population are immigrants; in many cooperatives Burkinabè workers are the majority; "Ivorian cocoa farmer" systematically excludes the people doing most of the work)
+- "Post-conflict reconciliation completed" as a reason to ignore ethnic coding (the north-south fracture is a present-tense trust architecture; products that code to one side will face adoption resistance from the other)
+- "Abidjan market as national proxy" (Abidjan has ~35% of national population; literacy, connectivity, and income are significantly higher than interior; Abidjan data cannot be extrapolated nationally)
+
+REQUIRED PATTERNS (always write):
+- "Given an Abidjan informal sector target (Yopougon/Adjamé/Abobo) with [X]% standard French literacy, a text-first French interface is inaccessible to [specific number] of intended users; Nouchi voice is the required register"
+- "Cocoa belt deployment targeting [cooperative/region] includes an estimated [X]% Burkinabè migrant workers whose primary language is Mooré; the Burkina Faso fine-tuned Mooré ASR (4.24% WER) is the highest-performance indigenous NLP in the framework family and should be deployed before any other indigenous language layer"
+- "The post-conflict north-south balance review must be completed before any product launch; external community review by participants from both northern and southern communities is required"
+- "PI-SPI integration with the BCEAO June 30, 2026 deadline enables cross-institution settlement across Orange Money, Wave, MTN, and Moov; early integration provides settlement architecture that late entrants inherit as table stakes"
+
+THE AKWABA INTEGRITY TEST — before finalizing any output, confirm:
+- Three Côte d'Ivoires Declaration made: which user populations the product serves, documented explicitly
+- Post-conflict north-south balance check completed: visual identity, voice persona, distribution strategy, gatekeeper engagement plan all reviewed
+- Nouchi gap assessed: corpus collection plan in place, or product scoped to educated French-literate minority
+- Migrant worker population explicitly addressed: does language stack, KYC design, and financial use case serve Burkinabè and Malian workers?
+- Every dimension has a documented finding or investigation instruction; no claim is unlabeled
+- APDP-CI notification and cross-border data pipeline audit completed
+- CCC compliance assessed if product touches cocoa supply chain
+- CIMA licensing process initiated in Phase 1 if insurance features planned (6-12 month timeline)
+- PI-SPI integration path confirmed against June 2026 deadline
+- Four-player payment market integration architecture decided
+- Mooré assessed as highest-leverage indigenous NLP for cocoa belt deployment
+- Dioula/Bambara transfer validation scoped as highest-leverage trade language investment
+
+SIX AUDIT DIMENSIONS:
+1. Linguistic Architecture — Nouchi (Tier 0, ~6-8M functional users in Abidjan metro, zero NLP, builds on French fine-tuning but distinct grammar/phonology/lexicon); Dioula/Jula (Tier 1, ~7-10M cross-ethnic trade language, Bambara transfer viable — validate empirically); Baoulé (Tier 1, ~3.5-4M, cocoa heartland, no corpus); Mooré (Tier 1 for cocoa belt, ~1-2M Burkinabè workers, 4.24% WER fine-tuned model from Burkina Faso — highest-performance indigenous NLP in family); Bété/Sénoufo/Agni by region; French (formal/elite contexts only; present-tense limitations for majority user populations)
+2. Interface and Interaction Model — Three-tier architecture mandatory (Abidjan formal / Abidjan informal / interior); literacy ranges from 78-85% in Plateau/Cocody to 25-32% in northern departments; cocoa belt migrant worker design standard: Mooré/Fulfuldé voice, offline-first, seasonal cash flow alignment, cross-border Burkina Faso remittance as primary financial use case; post-conflict balance check before launch
+3. Infrastructure and Technical Architecture — 85% 4G coverage but north and far west limited; 50-55% mobile internet penetration (highest in family); Abidjan can support sophisticated connected features; interior still offline-first; Orange Bank Africa creates banking-mobile money integration unique in WAEMU; Abidjan is potential WAEMU regional product development platform
+4. Financial Integration — Orange Money (primary, widest agent network for interior); Wave (aggressive market entrant, growing urban share, lower-fee model forcing Orange pricing response); MTN MoMo (third player, meaningful share); Moov Africa (fourth, northern pockets); Orange Bank Africa (banking-grade savings/credit/insurance API — unique in family); CinetPay/Bizao for aggregation and multi-country routing; CCC price floor compliance for cocoa supply chain products; PI-SPI 15 institutions, June 2026 deadline
+5. Regulatory and Data Sovereignty — APDP-CI (most developed data protection authority in family; enforcement-capable; algorithmic transparency requirements developing); ARTCI for USSD/VAS; BCEAO financial licensing; Conseil Café-Cacao (CCC) for cocoa supply chain; CIMA for insurance (6-12 month licensing timeline); SFD regulations for microfinance; PI-SPI technical compliance
+6. Cultural and Social Architecture — Four-track social license architecture: (a) Dioula merchant networks for trade products; (b) Akan chieftaincy + cooperative presidents for cocoa belt; (c) Christian church networks for Abidjan and south; (d) Islamic community structures for north and Dioula Muslim communities; Burkinabè migrant worker community via worker solidarity associations; Ivoirité undercurrent means tiered KYC (not national-ID-only) is a political positioning choice; Coupé-Décalé cultural register for youth and urban products — Côte d'Ivoire is Francophone West Africa's cultural powerhouse; Nouchi register signals cultural authenticity for informal sector products
+
+MOORÉ STRATEGIC ADVANTAGE:
+The 4.24% WER Mooré ASR developed for Burkina Faso is production-grade. Burkinabè migrant workers are the majority labor force in many cocoa belt cooperatives. No product serving the cocoa belt has deployed Mooré voice features. The combination of production-grade NLP and a large underserved user population in a defined geography is unique in this framework family. Deploying Mooré voice before any competitor is a structural first-mover advantage — faster to production than any other indigenous language in the family.
+
+DIOULA AS CROSS-ETHNIC INFRASTRUCTURE:
+Dioula is not the largest ethnic language. It is the language that crosses ethnic lines in commerce. Bambara transfer makes it the most tractable indigenous NLP path after Mooré. Adjamé wholesale market Dioula merchant network endorsement propagates product adoption through a distribution channel that reaches from Abidjan to the Sahel. Dioula NLP is infrastructure, not localization.
+
+ABIDJAN AS WAEMU REGIONAL PLATFORM:
+No other market in the framework family offers this combination: most developed WAEMU fintech ecosystem, most advanced PI-SPI integration outside Senegal, Orange Bank Africa banking-mobile money integration, Hub75 and Orange Digital Center tech community, and geographic position making Côte d'Ivoire products natural candidates for Mali, Burkina Faso, Togo, and Benin expansion. Products built at Abidjan sophistication with interior-inclusive design are potential WAEMU regional products, not just Ivorian products.
+
+ARTIFACT NAMING CONVENTION: [command]_[product_name]_[month]_[day]_[year]
+Examples: akwaba_cocoafinance_april_12_2026 | lingua_abidjan_youth_april_12_2026 | comply_insurtech_april_12_2026</code></pre>
+    </div>
+
+    <!-- WHAT AKWABA IS -->
+    <div class="section-header">
+      <div class="section-label">Framework Overview</div>
+      <h2>What <span class="accent">AKWABA</span> Does</h2>
+    </div>
+    <p>Côte d'Ivoire rewards analytical nuance more than any other market in Francophone West Africa. A product team arriving from Dakar might conclude this is simply a larger, more sophisticated Senegal deployment. This conclusion is wrong in at least five specific ways — each of which surfaces as a product failure at a different layer: Nouchi, the migrant worker dimension, the post-conflict north-south fracture, the four-player payment market, and the sophistication ceiling that cuts both ways.</p>
+
+    <div class="callout green">
+      <div class="callout-label">Mooré — The Highest-Performance Indigenous NLP in the Framework Family</div>
+      <p>Burkina Faso NLP researchers have achieved a 4.24% WER for Mooré ASR — the best fine-tuned performance of any indigenous language covered by these frameworks. An estimated 1–2 million Burkinabè workers in Côte d'Ivoire's cocoa belt speak Mooré as their primary language. No product serving the cocoa belt has deployed Mooré voice features. The combination of production-grade NLP and a large underserved user population in a defined geography is a structural first-mover advantage that no other agricultural labor deployment in the family has. Validate the model for the Ivorian Burkinabè population's specific variant, then deploy before any competitor.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">The Post-Conflict North-South Balance Check — Mandatory Launch Gate</div>
+      <p>The 2002–2011 civil conflict mapped almost perfectly onto ethnic and religious lines — Muslim, Dioula-speaking north versus Christian, Akan-speaking south. The political concept of Ivoirité — which excluded northerners and immigrants from formal political and economic participation — has left a social undercurrent that shapes how products are perceived along ethnic and regional coding. Products whose visual identity, voice persona, spokespeople, or distribution strategy codes as "southern" will face adoption resistance in the north that no amount of subsequent marketing can fully reverse. Complete the balance check before launch. Require external review by community members from both north and south — do not rely on product team assessment of ethnic coding.</p>
+    </div>
+
+    <!-- COMMANDS -->
+    <div class="section-header">
+      <div class="section-label">Command Reference</div>
+      <h2>8 <span class="accent">Commands</span></h2>
+    </div>
+
+    <table class="cmd-table">
+      <thead>
+        <tr><th>Command</th><th>What It Does</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>akwaba [product]</code></td>
+          <td>Full adaptation audit across all six dimensions — produces the complete diagnostic matrix and strategic deployment brief including Three Côte d'Ivoires Declaration and post-conflict balance review</td>
+        </tr>
+        <tr>
+          <td><code>lingua [product]</code></td>
+          <td>Language and NLP strategy — Nouchi gap and corpus plan, Dioula/Bambara transfer protocol, Mooré cocoa belt deployment (fastest to production), N'Ko script assessment, Baoulé and Sénoufo pre-recorded audio, code-switching design</td>
+        </tr>
+        <tr>
+          <td><code>rails [product]</code></td>
+          <td>Mobile money integration — four-player architecture (Orange primary / Wave secondary / MTN + Moov tertiary), Orange Bank Africa API, PI-SPI advanced tier, CCC cocoa payment architecture, Burkinabè remittance corridor, Bizao multi-country routing</td>
+        </tr>
+        <tr>
+          <td><code>voice [product]</code></td>
+          <td>Three-tier voice interface specification — Abidjan formal (French NLP limitations acknowledged), Abidjan informal (Nouchi voice mandatory), interior (indigenous language, Mooré priority), post-conflict visual/voice balance review, cocoa belt field interface standard</td>
+        </tr>
+        <tr>
+          <td><code>comply [product]</code></td>
+          <td>Regulatory roadmap — APDP-CI notification, BCEAO/PI-SPI June 2026 deadline, ARTCI telecom licensing, Conseil Café-Cacao assessment, CIMA insurance licensing (6–12 month timeline), algorithmic transparency preparation</td>
+        </tr>
+        <tr>
+          <td><code>culture [product]</code></td>
+          <td>Social and cultural adaptation — post-conflict balance protocol, four-track social license (Dioula merchants / Akan chiefs+cooperative presidents / Christian churches / Islamic structures), Burkinabè worker community engagement, Ivoirité navigation, Nouchi and Coupé-Décalé cultural register</td>
+        </tr>
+        <tr>
+          <td><code>roadmap [product]</code></td>
+          <td>Three-phase plan — cocoa calendar-aware, PI-SPI June 2026 as hard milestone, post-conflict balance check as Phase 1 gate, Mooré deployment in Phase 2 as fastest indigenous language path</td>
+        </tr>
+        <tr>
+          <td><code>data [product]</code></td>
+          <td>Data source intelligence — INS-CI, BCEAO, Conseil Café-Cacao, APDP-CI; Hub75 competitive landscape; Mooré validation (faster than any other indigenous language); post-conflict sensitivity testing protocol; cooperative president mapping</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>How to Invoke</h3>
+    <div class="invocation">
+      <div><strong>akwaba AgriFinance</strong></div>
+      <div><strong>akwaba AgriFinance</strong> — here's our current stack: [paste notes]</div>
+      <div><strong>akwaba</strong> [product] — primary market: Abidjan / Cocoa belt Bas-Sassandra / Korhogo north</div>
+      <div><strong>akwaba</strong> [product] — sector: cocoa smallholder finance</div>
+      <div class="inv-comment">─</div>
+      <div><strong>lingua</strong> [product] — target: Nouchi-speaking Abidjan youth</div>
+      <div><strong>lingua</strong> [product] — target: Dioula trade corridor, northern deployment</div>
+      <div><strong>rails</strong> [product] — existing: Orange Money integrated</div>
+      <div><strong>comply</strong> [product] — data type: agricultural / financial</div>
+      <div><strong>voice</strong> [product]</div>
+      <div><strong>culture</strong> [product] — sector: fintech / post-conflict north-south</div>
+      <div><strong>roadmap</strong> [product] — timeline: 12 months, cocoa calendar-aligned</div>
+    </div>
+
+    <!-- SIX DIMENSIONS -->
+    <div class="section-header">
+      <div class="section-label">akwaba Command</div>
+      <h2>The Six <span class="accent">Audit Dimensions</span></h2>
+    </div>
+    <p>Every <code>akwaba</code> audit covers all six dimensions. Every cell must be labeled [Observed], [Inferred], [Unverifiable], or [Not Applicable].</p>
+
+    <h3 class="cmd">Dimension 1 — Linguistic Architecture</h3>
+    <p>Nouchi is Tier 0 — the cross-ethnic Abidjan vernacular with zero NLP resources. Dioula is the highest-leverage trade language investment: its relationship to Bambara means Mali-developed NLP resources partially transfer, and its role as the commerce lingua franca across ethnic lines gives it reach that no single ethnic language can match. Mooré is the fastest path to indigenous language production deployment: the 4.24% WER fine-tuned model from Burkina Faso can be validated and deployed for the cocoa belt's Burkinabè population faster than building any other indigenous language from scratch. N'Ko script literacy among educated northern and western Malinké/Dioula speakers adds a script dimension absent from most of the framework family.</p>
+
+    <h3 class="cmd">Dimension 2 — Interface and Interaction Model</h3>
+    <p>Three distinct interface designs must operate simultaneously. The Abidjan formal/informal split — Plateau at ~78–85% literacy vs. Yopougon/Adjamé/Abobo/Koumassi at ~55–68% — requires fundamentally different registers even within the same city. The cocoa belt migrant worker design standard: Mooré or Fulfuldé voice primary, offline-first for rural farm locations, seasonal cash flow alignment (cocoa payments), cross-border Burkina Faso remittance as primary financial use case, transaction design that does not require Ivorian national ID for basic access. Post-conflict balance review of all interface elements before launch.</p>
+
+    <h3 class="cmd">Dimension 3 — Infrastructure and Technical Architecture</h3>
+    <p>At ~50–55% mobile internet penetration, Côte d'Ivoire has the highest in the framework family. 4G covers ~85% of the population with Abidjan at 5G rollout stage. But the north and far west are limited to 3G/EDGE, and deep cocoa belt is variable. Abidjan's combination of Orange Bank Africa, 15 PI-SPI institutions, Hub75 tech ecosystem, and Orange Digital Center makes it the most viable platform for building WAEMU-regional products in the family. Products built at Abidjan sophistication with interior-inclusive design are not just Ivorian products — they are potential Mali, Burkina Faso, Togo, and Benin products.</p>
+
+    <h3 class="cmd">Dimension 4 — Financial Integration</h3>
+    <p>Côte d'Ivoire has the most competitive mobile money market in the framework family: four meaningful players with Wave actively growing market share through a lower-fee model that has forced Orange Money pricing responses. Orange Money primary (widest interior agent network), Wave secondary (growing urban share), MTN and Moov tertiary (specific geographic pockets). Orange Bank Africa enables savings, micro-credit, and insurance products at banking-grade capability — unique in the family. Cocoa payment integration must comply with CCC price floor regulations; the cooperative is the primary financial integration node, not the individual farmer. PI-SPI at 15 institutions provides post-June 2026 cross-institution settlement architecture.</p>
+
+    <h3 class="cmd">Dimension 5 — Regulatory and Data Sovereignty</h3>
+    <p>APDP-CI is the most institutionally developed and enforcement-capable data protection authority in the framework family, operating under a 2013 ordinance with algorithmic transparency requirements developing. BCEAO financial licensing applies with the PI-SPI June 2026 deadline as a hard milestone. Conseil Café-Cacao (CCC) regulation is non-negotiable for any product touching the cocoa supply chain — price floor regulation, cooperative licensing, and export quota systems all have product implications. CIMA insurance licensing takes 6–12 months — initiate in Phase 1 for any insurance feature. ARTCI governs USSD and VAS services.</p>
+
+    <h3 class="cmd">Dimension 6 — Cultural and Social Architecture</h3>
+    <p>Four-track social license architecture: Dioula merchant networks for trade and informal market products; Akan chieftaincy and cooperative presidents for cocoa belt agricultural products; Christian church networks for Abidjan and the south; Islamic community structures for the north and Dioula Muslim communities. The Ivoirité undercurrent means that national ID-only KYC is not just a compliance design choice — it is a political positioning choice that will encounter the historical exclusion of northerners and immigrants. Tiered KYC is required. Côte d'Ivoire's Coupé-Décalé music and its successors define the regional popular cultural register for Francophone West Africa — products that engage this register in tone and brand energy have cross-regional resonance that no other country in the family can match.</p>
+
+    <!-- INTEGRITY TEST -->
+    <div class="section-header">
+      <div class="section-label">Quality Gate</div>
+      <h2>The AKWABA <span class="accent">Integrity Test</span></h2>
+    </div>
+    <p>Before any output is finalized, confirm every item on this list:</p>
+    <ul class="checklist">
+      <li>Three Côte d'Ivoires Declaration made: which user populations the product serves, documented explicitly; no product claiming to serve all three with one interface design</li>
+      <li>Post-conflict north-south balance check explicitly completed: visual identity, voice persona, distribution strategy, and gatekeeper engagement plan reviewed for ethnic/regional coding; external community review required</li>
+      <li>Nouchi gap assessed: corpus collection plan in place, or product honestly scoped to educated French-literate minority</li>
+      <li>Migrant worker population explicitly addressed: language stack, KYC design, and financial use case architecture reviewed for Burkinabè and Malian worker inclusion</li>
+      <li>Every dimension has a documented finding or investigation instruction; no claim is unlabeled</li>
+      <li>APDP-CI notification and cross-border data pipeline audit completed</li>
+      <li>CCC compliance assessed if product touches cocoa supply chain</li>
+      <li>CIMA licensing process initiated in Phase 1 if insurance features planned (6–12 month timeline)</li>
+      <li>PI-SPI integration path confirmed against June 2026 deadline</li>
+      <li>Four-player payment market integration architecture decided; Orange-primary-Wave-secondary at minimum</li>
+      <li>Mooré assessed as highest-leverage indigenous NLP investment for cocoa belt deployment</li>
+      <li>Dioula/Bambara transfer validation scoped as highest-leverage trade language investment</li>
+    </ul>
+
+    <!-- FORBIDDEN / REQUIRED -->
+    <div class="section-header">
+      <div class="section-label">Analytical Discipline</div>
+      <h2>Forbidden &amp; <span class="accent">Required</span> Patterns</h2>
+    </div>
+
+    <h3>Never Write</h3>
+    <ul class="pattern-list forbidden">
+      <li>"French-language deployment" as if standard French NLP reaches Abidjan's majority user population — Nouchi is the actual vernacular of Yopougon, Adjamé, Abobo, and Koumassi; the majority of Abidjan lives in these communes.</li>
+      <li>"Stable WAEMU market" as shorthand for simple financial integration — four-player market with active fee competition; Orange Bank Africa adds banking-grade complexity; single-player integration is not sufficient for national reach.</li>
+      <li>"Cocoa farmer" without specifying nationality — 25–30% of the population are immigrants; in many cooperatives Burkinabè workers are the majority; "Ivorian cocoa farmer" systematically excludes the people doing most of the work.</li>
+      <li>"Post-conflict reconciliation completed" as a reason to ignore ethnic coding in product design — the north-south fracture is a present-tense trust architecture; products that code to one side will face adoption resistance from the other.</li>
+      <li>"Abidjan market as national proxy" — Abidjan has ~35% of national population at significantly higher literacy, connectivity, and income than the interior; Abidjan data cannot be extrapolated nationally.</li>
+    </ul>
+
+    <h3>Always Write</h3>
+    <ul class="pattern-list required">
+      <li>"Given an Abidjan informal sector target (Yopougon/Adjamé/Abobo) with [X]% standard French literacy, a text-first French interface is inaccessible to [specific number] of intended users; Nouchi voice is the required register for this population."</li>
+      <li>"Cocoa belt deployment targeting [cooperative/region] includes an estimated [X]% Burkinabè migrant workers whose primary language is Mooré; the Burkina Faso fine-tuned Mooré ASR (4.24% WER) is the highest-performance indigenous NLP in the framework family and should be deployed before any other indigenous language layer."</li>
+      <li>"The post-conflict north-south balance review must be completed before any product launch; external community review by participants from both northern and southern communities is required."</li>
+      <li>"PI-SPI integration with the BCEAO June 30, 2026 deadline enables cross-institution settlement across Orange Money, Wave, MTN, and Moov; early integration provides settlement architecture that late entrants inherit as table stakes."</li>
+    </ul>
+
+    <!-- ROADMAP -->
+    <div class="section-header">
+      <div class="section-label">roadmap Command</div>
+      <h2>Phased <span class="accent">Implementation</span></h2>
+    </div>
+    <p>Three phases, anchored to the BCEAO PI-SPI June 2026 deadline and the cocoa harvest calendar (main crop Oct–March; mid-crop April–July).</p>
+
+    <div class="phases">
+      <div class="phase-card">
+        <div class="phase-num">Phase 1</div>
+        <div class="phase-title">Foundation</div>
+        <div class="phase-timeline">Months 1–4 · PI-SPI June 2026 deadline is the hard milestone</div>
+        <p style="font-size:0.88rem; color:var(--p5); margin-bottom:0;">APDP-CI notification filed; data processing inventory documented. BCEAO financial licensing scoped; PI-SPI integration initiated. ARTCI engagement if USSD or VAS features in scope. CCC assessment if product touches cocoa supply chain. CIMA insurance licensing initiated if applicable (6–12 month timeline starts now). Orange Money primary integration with idempotency handling. Wave secondary integration scoped. Three-tier interface architecture declared: which of the three user populations is the launch scope — explicitly documented. Post-conflict north-south balance checklist completed for launch visual identity and distribution strategy. Offline-first architecture tested at simulated 3G speeds on 3GB RAM Android.</p>
+        <div class="phase-gate">Gate: Phase 2 does not begin until PI-SPI integration path confirmed, APDP-CI notification filed, and post-conflict balance review completed and documented.</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">Phase 2</div>
+        <div class="phase-title">Localization</div>
+        <div class="phase-timeline">Months 4–9 · Main cocoa harvest (Oct–Mar) included as live product test</div>
+        <p style="font-size:0.88rem; color:var(--p5); margin-bottom:0;">Nouchi voice sample collection initiated (minimum 70 speakers; Yopougon, Adjamé, Abobo, Koumassi; balanced gender; market ambient conditions); pre-recorded Nouchi audio prompts deployed as interim. Mooré production deployment: leverage Burkina Faso fine-tuned model; validate with Ivorian Burkinabè community; fastest indigenous language path. Dioula/Bambara transfer validation testing; deploy if threshold met. Icon library validated: Abidjan Yopougon (Nouchi), Yamoussoukro/Bouaké (Baoulé), Korhogo (Sénoufo) minimum. Community gatekeeper engagement: Dioula merchant association (Adjamé), cooperative presidents (cocoa belt), Akan paramount chiefs (central cocoa region), Islamic leaders (north), church leadership (Abidjan and south). MTN MoMo added as tertiary rail. Orange Bank Africa integration scoped and activated if banking-grade financial features in scope.</p>
+        <div class="phase-gate">Gate: Phase 3 does not begin until voice/icon comprehension testing passes &gt;80% task completion across all three Abidjan, cocoa belt, and northern test cohorts.</div>
+      </div>
+      <div class="phase-card">
+        <div class="phase-num">Phase 3</div>
+        <div class="phase-title">Reach Expansion + WAEMU Positioning</div>
+        <div class="phase-timeline">Months 9–18 · Full four-player integration; WAEMU regional positioning</div>
+        <p style="font-size:0.88rem; color:var(--p5); margin-bottom:0;">Nouchi ASR/TTS production deployment if corpus reached threshold. Baoulé and Sénoufo language layers via community-recorded audio. Moov Africa integrated for northern and interior pockets. CCC compliance integration for cocoa supply chain if not Phase 1. CIMA insurance product launch if applicable. Burkinabè remittance corridor fully activated: Orange Money Burkina Faso integration; Bizao multi-country routing. WAEMU regional expansion scoped: Côte d'Ivoire product as base for Mali, Burkina Faso, Togo expansion; Dioula language layer as cross-border trade language asset. PI-SPI post-June 2026 benefits realized. Feedback loop: Abidjan informal, cocoa belt, and northern cohorts tracked separately.</p>
+        <div class="phase-gate">Gate: In-country feedback loop established across all three Côte d'Ivoires; WAEMU expansion feasibility assessed against Dioula language layer and Bizao multi-country routing.</div>
+      </div>
+    </div>
+
+    <!-- SEVEN-FRAMEWORK CROSSWALK -->
+    <div class="section-header">
+      <div class="section-label">Full Framework Family Crosswalk</div>
+      <h2>Seven-Country <span class="accent">Reference</span></h2>
+    </div>
+    <p>AKWABA is the seventh framework in this family. Each requires a structurally distinct product architecture.</p>
+
+    <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+    <table class="crosswalk-7">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>TERANGA</th>
+          <th>NAIJA</th>
+          <th>AZIZA</th>
+          <th>DJOLIBA</th>
+          <th>ZOE</th>
+          <th>GEBA</th>
+          <th class="akwaba-col">AKWABA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Official language</td>
+          <td>French</td>
+          <td>English</td>
+          <td>French</td>
+          <td>French</td>
+          <td>English</td>
+          <td>Portuguese</td>
+          <td class="akwaba-col">French</td>
+        </tr>
+        <tr>
+          <td>Primary vernacular</td>
+          <td>Wolof (~80%)</td>
+          <td>Pidgin/regional</td>
+          <td>Fon</td>
+          <td>Susu</td>
+          <td>Liberian English</td>
+          <td>Kriol (95%)</td>
+          <td class="akwaba-col">Nouchi (Abidjan) + Dioula (trade)<span class="flag">two-register market</span></td>
+        </tr>
+        <tr>
+          <td>Best indigenous NLP</td>
+          <td>Wolof (Kallaama)</td>
+          <td>Yoruba limited</td>
+          <td>Fon: none</td>
+          <td>Susu: none</td>
+          <td>Kpelle: limited</td>
+          <td>Kriol: none</td>
+          <td class="akwaba-col">Mooré 4.24% WER<span class="positive">highest in family</span></td>
+        </tr>
+        <tr>
+          <td>PI-SPI tier</td>
+          <td>Advanced (19)</td>
+          <td>N/A</td>
+          <td>Emerging (6)</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Frontier (4)</td>
+          <td class="akwaba-col">Advanced (15)<span class="positive">second in family</span></td>
+        </tr>
+        <tr>
+          <td>Payment market</td>
+          <td>Wave dominant</td>
+          <td>OPay/PalmPay</td>
+          <td>MTN + Moov</td>
+          <td>Orange dominant</td>
+          <td>Orange + MTN</td>
+          <td>Orange dominant</td>
+          <td class="akwaba-col">Orange + Wave + MTN + Moov<span class="flag">four-player competition</span></td>
+        </tr>
+        <tr>
+          <td>Unique financial infra</td>
+          <td>Wave REST API</td>
+          <td>OPay/Moniepoint</td>
+          <td>Standard WAEMU</td>
+          <td>Standard BCRG</td>
+          <td>Dual LRD+USD</td>
+          <td>Enhanced AML/CFT</td>
+          <td class="akwaba-col">Orange Bank Africa<span class="positive">banking+mobile money unique in family</span></td>
+        </tr>
+        <tr>
+          <td>Dominant commodity</td>
+          <td>Services</td>
+          <td>Oil/diverse</td>
+          <td>Cotton+transit</td>
+          <td>Bauxite</td>
+          <td>Rubber+iron ore</td>
+          <td>Cashew (90%)</td>
+          <td class="akwaba-col">Cocoa (~40% global supply)<span class="flag">CCC regulation mandatory</span></td>
+        </tr>
+        <tr>
+          <td>Migrant worker dim.</td>
+          <td>Minor</td>
+          <td>Internal</td>
+          <td>Minor</td>
+          <td>Minor</td>
+          <td>Minor</td>
+          <td>Minor</td>
+          <td class="akwaba-col">Major: 25-30% of population; Burkinabè majority in many cocoa cooperatives<span class="flag">systematically excluded</span></td>
+        </tr>
+        <tr>
+          <td>Post-conflict fracture</td>
+          <td>None</td>
+          <td>Boko Haram</td>
+          <td>None</td>
+          <td>Coup 2021</td>
+          <td>Two civil wars</td>
+          <td>Chronic instability</td>
+          <td class="akwaba-col">North-south Ivoirité fracture<span class="flag">mandatory balance gate</span></td>
+        </tr>
+        <tr>
+          <td>Regional hub potential</td>
+          <td>Moderate</td>
+          <td>High (Anglophone)</td>
+          <td>Low</td>
+          <td>Low</td>
+          <td>Low</td>
+          <td>Low</td>
+          <td class="akwaba-col">Highest in family<span class="positive">WAEMU financial capital</span></td>
+        </tr>
+        <tr>
+          <td>Diaspora corridor</td>
+          <td>France/Italy/US</td>
+          <td>UK/US</td>
+          <td>France</td>
+          <td>France/US</td>
+          <td>US (Minn/Philly/DC)</td>
+          <td>Portugal</td>
+          <td class="akwaba-col">France + Burkina Faso (migrant worker)</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <!-- NAMING CONVENTION -->
+    <div class="section-header">
+      <div class="section-label">Output Standards</div>
+      <h2>Artifact <span class="accent">Naming Convention</span></h2>
+    </div>
+    <p>All AKWABA output artifacts follow: <strong>[command]_[product_name]_[month]_[day]_[year]</strong></p>
+    <div class="invocation" style="line-height:2.1;">
+      <div class="inv-comment"># Examples</div>
+      <div><strong>akwaba_cocoafinance_april_12_2026</strong></div>
+      <div><strong>lingua_abidjan_youth_april_12_2026</strong></div>
+      <div><strong>comply_insurtech_april_12_2026</strong></div>
+      <div><strong>roadmap_trade_platform_april_12_2026_v2</strong></div>
+      <div class="inv-comment">─</div>
+      <div class="inv-comment"># Rules: lowercase, underscores as separators, date = date of generation</div>
+      <div class="inv-comment"># Post-conflict note: re-run culture and voice outputs if political context shifts significantly</div>
+      <div class="inv-comment"># PI-SPI note: re-run rails and comply outputs after June 2026 deadline implementation</div>
+    </div>
+
+  </div><!-- /content -->
+
+  <footer>
+    Built with <a href="https://www.bearbrown.co">bearbrown.co</a> · AI tools for educators, creators &amp; founders
+  </footer>
+
+</body>
+</html>

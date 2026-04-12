@@ -40,9 +40,11 @@ const markets: MarketCardProps[] = [
   {
     country: "Côte d'Ivoire",
     flag: '🇨🇮',
+    framework: 'AKWABA',
     gdp: '~$70B',
-    status: 'dev',
+    status: 'live',
     keyDimension: "WAEMU PI-SPI 15 institutions; N'Ko script in Manding north; Wave > Orange in Abidjan",
+    toolUrl: '/tools/akwaba-cote-divoire',
   },
   {
     country: 'Senegal',
@@ -101,9 +103,11 @@ const markets: MarketCardProps[] = [
   {
     country: 'Mauritania',
     flag: '🇲🇷',
+    framework: 'ATTAYA',
     gdp: '~$10B',
-    status: 'dev',
+    status: 'live',
     keyDimension: 'Hassaniya Arabic ASR 12% WER; Arabic-script primary; WAEMU-adjacent',
+    toolUrl: '/tools/attaya-mauritania',
   },
   {
     country: 'Togo',
@@ -144,9 +148,11 @@ const markets: MarketCardProps[] = [
   {
     country: 'Gambia',
     flag: '🇬🇲',
+    framework: 'JAMMA',
     gdp: '~$2.1B',
-    status: 'dev',
+    status: 'live',
     keyDimension: 'Wave recently launched; Mandinka/Wolof primary; landlocked within Senegal',
+    toolUrl: '/tools/jamma-gambia',
   },
   {
     country: 'Guinea-Bissau',
@@ -254,7 +260,7 @@ export default async function Home() {
             </p>
 
             <p className="text-sm font-semibold text-primary mb-10 tracking-wide">
-              West Africa AI Adaptation Consulting&nbsp;&mdash;&nbsp;thirteen frameworks live&nbsp;&middot;&nbsp;sixteen markets mapped
+              West Africa AI Adaptation Consulting&nbsp;&mdash;&nbsp;sixteen frameworks&nbsp;&middot;&nbsp;sixteen markets
             </p>
 
             <div className="flex flex-col gap-3 min-[400px]:flex-row">
