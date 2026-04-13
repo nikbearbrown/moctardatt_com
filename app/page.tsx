@@ -222,6 +222,13 @@ const engagements = [
     subtext:
       'A standing relationship with someone who has mapped these markets systematically.',
   },
+  {
+    name: 'Field Engagement',
+    description:
+      'On-the-ground work in West Africa. User research with real target populations, permit navigation, regulatory meetings, and in-market product validation.',
+    subtext:
+      'Moctar is in the region. He can put your product in front of real users, sit with a regulator, and walk a permit process through to completion.',
+  },
 ]
 
 // ── Page ───────────────────────────────────────────────────────────────────
@@ -329,11 +336,11 @@ export default async function Home() {
               Work with Moctar
             </h2>
             <p className="text-muted-foreground max-w-xl">
-              Three ways to engage, depending on where you are.
+              Four ways to engage, depending on where you are.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {engagements.map((e) => (
               <div key={e.name} className="bg-card border rounded-lg p-6 flex flex-col gap-3">
                 <h3 className="text-lg font-bold">{e.name}</h3>

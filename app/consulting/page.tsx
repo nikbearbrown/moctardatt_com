@@ -71,6 +71,12 @@ const services = [
     who: 'A standing relationship with someone who has mapped these conditions systematically — not someone re-learning them market by market as your product expands.',
     signals: ['Ongoing framework access', 'Architecture input', 'Multi-market scope', 'As conditions change'],
   },
+  {
+    name: 'Field Engagement',
+    what: 'On-the-ground work in West Africa. User research with actual target populations, regulatory navigation, permit guidance, and in-market validation.',
+    who: 'For teams who need more than a remote diagnostic. Moctar is in the region — he can put your product in front of real users in Dakar, Lagos, or Abidjan, sit with a regulator, and walk a permit process through to completion.',
+    signals: ['In-market user research', 'Permit navigation', 'Regulatory meetings', 'Live product testing'],
+  },
 ]
 
 // ── Page ───────────────────────────────────────────────────────────────────
@@ -144,11 +150,11 @@ export default function ConsultingPage() {
               How to engage
             </h2>
             <p className="text-muted-foreground max-w-xl">
-              Three engagement types. The right one depends on where you are in the build.
+              Four engagement types. The right one depends on where you are in the build.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((s) => (
               <div key={s.name} className="bg-card border rounded-lg p-6 flex flex-col gap-4">
                 <h3 className="text-xl font-bold">{s.name}</h3>
