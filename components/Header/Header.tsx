@@ -30,7 +30,7 @@ export default function Header() {
     { name: "Analysis", href: "/analysis", external: false },
     { name: "Blog", href: "/blog", external: false },
     { name: "Consulting", href: "/consulting", external: false },
-    { name: "Substack", href: "/substack", external: false },
+    { name: "Substack", href: "https://moctardatt.substack.com/", external: true },
     { name: "Tools", href: "/tools", external: false },
   ]
 

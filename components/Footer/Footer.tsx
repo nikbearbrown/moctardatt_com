@@ -46,7 +46,7 @@ export default function Footer() {
                 <li><Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link></li>
                 <li><Link href="/tools" className="text-muted-foreground hover:text-foreground transition-colors">Tools</Link></li>
                 <li><Link href="/analysis" className="text-muted-foreground hover:text-foreground transition-colors">Analysis</Link></li>
-                <li><Link href="/substack" className="text-muted-foreground hover:text-foreground transition-colors">Newsletter</Link></li>
+                <li><a href="https://moctardatt.substack.com/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Substack</a></li>
                 <li><Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link></li>
               </ul>
             </div>

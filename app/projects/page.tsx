@@ -58,7 +58,7 @@ export default function ProjectsPage() {
         { title: 'Critical Analysis', description: 'Honest assessments of AI claims, benchmarks, and hype cycles.' },
         { title: 'Case Studies', description: 'Real examples of AI integration — what worked, what didn\'t, and why.' },
       ],
-      links: [{ label: 'Subscribe', href: '/substack' }],
+      links: [{ label: 'Subscribe', href: 'https://moctardatt.substack.com/' }],
     },
   ]
 
